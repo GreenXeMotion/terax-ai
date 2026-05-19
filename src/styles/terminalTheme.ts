@@ -9,41 +9,41 @@ import type { ITheme } from "@xterm/xterm";
  * stays curated — globals.css is grayscale, it has no semantic color palette.
  */
 
-/** Curated ANSI 16 palette, tuned for shadcn's dark surface. */
+/** Rose Pine Dark ANSI 16 palette. */
 const ansi = {
-  black: "#18181b",
-  red: "#ef4444",
-  green: "#22c55e",
-  yellow: "#eab308",
-  blue: "#3b82f6",
-  magenta: "#a855f7",
-  cyan: "#06b6d4",
-  white: "#e4e4e7",
+  black: "#191724",        // Base
+  red: "#eb6f92",          // Love
+  green: "#31748f",        // Pine
+  yellow: "#f6c177",       // Gold
+  blue: "#9ccfd8",         // Foam
+  magenta: "#c4a7e7",      // Iris
+  cyan: "#ebbcba",         // Rose
+  white: "#e0def4",        // Text
 
-  brightBlack: "#52525b",
-  brightRed: "#f87171",
-  brightGreen: "#4ade80",
-  brightYellow: "#facc15",
-  brightBlue: "#60a5fa",
-  brightMagenta: "#c084fc",
-  brightCyan: "#22d3ee",
-  brightWhite: "#fafafa",
+  brightBlack: "#6e6a86",  // Muted
+  brightRed: "#eb6f92",    // Love
+  brightGreen: "#31748f",  // Pine
+  brightYellow: "#f6c177", // Gold
+  brightBlue: "#9ccfd8",   // Foam
+  brightMagenta: "#c4a7e7", // Iris
+  brightCyan: "#ebbcba",   // Rose
+  brightWhite: "#e0def4",  // Text
 } as const;
 
 /** Semantic palette reused by the code editor. Kept in one place so the
  *  terminal's ANSI colors and syntax highlighting stay visually coherent. */
 export const syntaxPalette = {
-  comment: ansi.brightBlack,
-  keyword: ansi.blue,
-  string: ansi.green,
-  number: ansi.yellow,
-  constant: ansi.magenta,
-  fn: ansi.cyan,
-  type: ansi.brightCyan,
-  tag: ansi.red,
-  punctuation: "#a1a1aa",
-  invalid: ansi.red,
-  link: ansi.blue,
+  comment: ansi.brightBlack,   // Muted
+  keyword: "#c4a7e7",         // Iris
+  string: "#31748f",          // Pine
+  number: "#f6c177",          // Gold
+  constant: "#c4a7e7",        // Iris
+  fn: "#9ccfd8",              // Foam
+  type: "#9ccfd8",            // Foam
+  tag: "#31748f",             // Pine
+  punctuation: "#908caa",     // Subtle
+  invalid: "#eb6f92",         // Love
+  link: "#9ccfd8",            // Foam
 } as const;
 
 /**

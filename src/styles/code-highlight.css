@@ -23,23 +23,24 @@
 }
 
 :is(.dark *) {
-  --tok-keyword: oklch(0.78 0.13 305);
-  --tok-name: oklch(0.92 0.01 250);
-  --tok-type: oklch(0.83 0.11 200);
-  --tok-property: oklch(0.82 0.1 25);
-  --tok-operator: oklch(0.72 0.03 250);
-  --tok-comment: oklch(0.6 0.02 250);
-  --tok-string: oklch(0.82 0.12 145);
-  --tok-number: oklch(0.82 0.13 60);
-  --tok-bool: oklch(0.82 0.14 30);
-  --tok-regexp: oklch(0.8 0.14 10);
-  --tok-meta: oklch(0.78 0.1 290);
-  --tok-tag: oklch(0.78 0.14 25);
-  --tok-attr: oklch(0.83 0.12 70);
-  --tok-punctuation: oklch(0.72 0.02 250);
-  --tok-heading: oklch(0.82 0.1 25);
-  --tok-link: oklch(0.78 0.13 240);
-  --tok-invalid: oklch(0.7 0.22 25);
+  /* Rose Pine Dark syntax tokens */
+  --tok-keyword: oklch(0.720 0.110 305.0);      /* Iris */
+  --tok-name: oklch(0.890 0.023 285.0);         /* Text */
+  --tok-type: oklch(0.810 0.060 195.0);         /* Foam */
+  --tok-property: oklch(0.790 0.060 15.0);      /* Rose */
+  --tok-operator: oklch(0.600 0.028 285.0);     /* Subtle */
+  --tok-comment: oklch(0.490 0.033 285.0);      /* Muted */
+  --tok-string: oklch(0.500 0.080 210.0);       /* Pine */
+  --tok-number: oklch(0.810 0.120 75.0);        /* Gold */
+  --tok-bool: oklch(0.810 0.120 75.0);          /* Gold */
+  --tok-regexp: oklch(0.630 0.160 355.0);       /* Love */
+  --tok-meta: oklch(0.720 0.110 305.0);         /* Iris */
+  --tok-tag: oklch(0.500 0.080 210.0);          /* Pine */
+  --tok-attr: oklch(0.810 0.120 75.0);          /* Gold */
+  --tok-punctuation: oklch(0.600 0.028 285.0);  /* Subtle */
+  --tok-heading: oklch(0.720 0.110 305.0);      /* Iris */
+  --tok-link: oklch(0.810 0.060 195.0);         /* Foam */
+  --tok-invalid: oklch(0.630 0.160 355.0);      /* Love */
 }
 
 .tok-keyword,
