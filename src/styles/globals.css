@@ -165,9 +165,6 @@
   --app-zoom: 1;
 }
 
-html[data-chrome="borderless"] .terax-bg-surface {
-  border-radius: 12px;
-}
 .zoom-content {
   zoom: var(--app-zoom);
 }
@@ -185,7 +182,6 @@ html[data-chrome="borderless"] body {
 html[data-chrome="borderless"] #root,
 html[data-chrome="borderless"] #settings-root {
   height: 100%;
-  border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--border);
   background: var(--background);
