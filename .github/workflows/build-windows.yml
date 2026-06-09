@@ -29,4 +29,11 @@ jobs:
 
       - run: pnpm build
 
+      - name: Disable updater signing for CI
+        shell: pwsh
+        run: |
+          $config = Get-Content src-tauri\tauri.conf.json -Raw | ConvertFrom-Json
+          $config.bundle.createUpdaterArtifacts = $false
+          $config | ConvertTo-Json -Depth 32 | Set-Content src-tauri\tauri.conf.json
+
       - run: pnpm tauri build
